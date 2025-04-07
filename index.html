@@ -275,7 +275,9 @@ While accessing this interactive fiction, please be aware of your surroundings, 
 Do not use while driving.
 
 [[Begin the story]]
-&lt;&lt;set $campusLocation to &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin the story" tags="" position="700,550" size="100,100">&lt;&lt;script&gt;&gt;
+&lt;&lt;set $campusLocation to &quot;&quot;&gt;&gt;
+
+//Only minor change since last week (Manual Update Location button) //</tw-passagedata><tw-passagedata pid="2" name="Begin the story" tags="" position="700,550" size="100,100">&lt;&lt;script&gt;&gt;
 	window.measureDistance(State.variables.latitude, State.variables.longitude);
     // some possible values:
 	// AIMM
@@ -291,6 +293,8 @@ Welcome to our campus tour!
 
 You are currently most near to &lt;span id=&quot;location&quot;&gt;$campusLocation&lt;/span&gt;
 See Map below, (X) marks you.
+
+[[Update location|Begin the story]]
 
 &lt;&lt;if $campusLocation is &quot;Library&quot;&gt;&gt;
 [[Library]]
